@@ -142,7 +142,7 @@ namespace LinqToSql
                 //KeepChanges->cerca di tenere entrambe le modifiche 
                 db.ChangeConflicts.ResolveAll(RefreshMode.OverwriteCurrentValues);
 
-                db.SubmitChanges();
+                db.SubmitChanges(); //da fare sempre
             }
         }
     }
