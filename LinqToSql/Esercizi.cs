@@ -134,7 +134,7 @@ namespace LinqToSql
             catch (ChangeConflictException e)
             {
                 Console.WriteLine("Concurrency error: ");
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
                 Console.ReadKey();
 
                 //OverwriteCurrentValues->ignora le mie modifiche(aggiorna il mio obj model)
